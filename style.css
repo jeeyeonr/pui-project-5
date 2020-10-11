@@ -1,0 +1,501 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* Background image for BunBun home screen */
+.header-1
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(mark-olsen-oZqJMbQMJ-4-unsplash.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+/* Background image for BunBun menu screen */
+.header-2
+{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(mark-olsen-oZqJMbQMJ-4-unsplash.jpg);
+    height: 150vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Location of main nav*/
+.main-nav{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+/* Location of search nav*/
+.main-nav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: -10px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+/* Main nav inline-block*/
+.main-nav li{
+    display: inline-block;
+}
+/* Main nav font styling & spacings */
+.main-nav li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    font-family:"Roboto", sans-serif;
+    font-size: 15px;
+} 
+/* Main nav ctive square when hovering */
+.main-nav li.active a
+{
+    border: 1px solid white; 
+}
+/* Main nav hovering */
+.main-nav li a:hover
+{
+    border: 1px solid white; 
+}
+
+/* logo location */ 
+.logo
+{
+    float: left;
+    list-style: none;
+    margin-top: 30px ;
+}
+/* logo text styling */ 
+.logo2
+{
+    float: left;
+    padding: 0px 20px 20px 0px;
+    list-style: none;
+    margin-top: 8px ;
+}
+
+    
+/* logo image location */ 
+.logo img
+{ 
+    width: 50px;
+    height: auto;
+    float: left;
+    padding: 10px 20px 20px 60px;
+    margin-top: -20px ;
+}
+
+/* Home screen text location */ 
+.text-box
+{
+    position: absolute;
+    width: 1200px;
+    margin-left: 220px;
+    margin-top: 200px;
+}
+/* Home screen text styles */ 
+h1
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 275px;
+}
+/* Home screen Browse Button location */ 
+.button
+{
+    margin-top: 50px;
+    margin-left: 450px;
+}
+/* Home screen Browse Button location */ 
+.btn
+{
+    border: 1px solid transparent;
+    padding: 10px 50px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+/* Home screen Browse Button style */ 
+.btn-one
+{
+    background-color: darkcyan;
+    font-family: "Roboto", sans-serif;
+}
+/* Home screen Browse Button hover interaction */ 
+.btn:hover{
+    background-color: #fff;
+    color: #000
+}
+/* Product Menu Original box */ 
+.box1{
+    width:350px;
+    background-color:white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    left:150px;
+    top:150px;
+
+}
+/* Product Menu Blackberry box */ 
+.box2{
+    width:350px;
+    background-color:rgb(192, 152, 230);
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    left:650px;
+    top:150px;
+
+}
+/* Product Menu Walnut box */ 
+.box3{
+    width:350px;
+    background-color:white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    left:1150px;
+    top:150px;
+
+}
+/* Product Menu Original Gluten free box */ 
+.box4{
+    width:350px;
+    background-color:white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    left:150px;
+    top:700px;
+
+}
+/* Product Menu Pumpkin Spice box */ 
+.box5{
+    width:350px;
+    background-color:white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    left:650px;
+    top:700px;
+
+}
+/* Product Menu Caramel Pecan box */ 
+.box6{
+    width:350px;
+    background-color:white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    left:1150px;
+    top:700px;
+
+}
+/* Product Menu image location */ 
+.slide-img{
+    height: 450px;
+    position: relative;
+}
+/* Product Menu image styles */ 
+.slide-img img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+/* Product Menu detail box style */ 
+.detail-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* Product Menu detail box text */ 
+.type{
+    display: flex;
+    flex-direction: column;
+}
+.type a{
+    color:#222222;
+    margin: 5px 0px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-right: 8px;
+}
+.type span{
+    color:rgba(26,26,26,0.5);
+}
+/* Product detail page price text */ 
+.price{
+    color: #333333;
+    font-weight: 400;
+    font-size: 12px ;
+    font-family: sans-serif; 
+    letter-spacing: 0.5px;
+}
+/* overlay screen when hovering product menu screens */ 
+.overlay{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width:100%;
+    height:100%;
+    background-color: rgba(145, 208, 245, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* see detail in product menu to move to product detail screen */ 
+.buy-btn{
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color:#252525;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+}
+/* hovering interaction in product menu to move to product detail screen */ 
+.buy-btn:hover{
+    color:#FFFFFF;
+    background-color: #1da85c;
+    transition: all ease 0.3s;
+}
+/* overalay screen */ 
+.overlay{
+    visibility: hidden
+}
+.slide-img:hover .overlay{
+    visibility: visible;
+    animation: fade 0.5s;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100% {
+
+    }
+
+}
+
+/*--product detail css--*/
+.box7{
+    width:600px;
+    height:600px;
+    background-color:white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    left:150px;
+    top:150px;
+
+}
+.detail-box2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.box8{
+    width:600px;
+    height:600px;
+    background-color:lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    left:750px;
+    top:150px;
+
+}
+/*--product button for add to cart css--*/
+.buy-btn2{
+    width: 160px;
+    height: 40px;
+    display: flex;
+    margin-left:230px;
+    margin-top:550px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color:#252525;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+}
+
+.buy-btn2:hover{
+    color:#FFFFFF;
+    background-color: #1da85c;
+    transition: all ease 0.3s;
+}
+/*--product button for view my cart css--*/
+.buy-btn3{
+    width: 160px;
+    height: 40px;
+    display: flex;
+    margin-left:400px;
+    margin-top:-40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color:#252525;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+}
+
+.buy-btn3:hover{
+    color:#FFFFFF;
+    background-color: #1da85c;
+    transition: all ease 0.3s;
+}
+/*--product detail image styles--*/
+.slide-img2{
+    height: 650px;
+    position: relative;
+}
+.slide-img2 img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+/*--custom select for glazing--*/
+.custom-select {
+    position: relative;
+    width:150px;
+    margin-top: 400px;
+    margin-left:1050px;
+    font-family: Arial;
+}
+
+.custom-select select {
+    background: cornflowerblue;
+    width: 200px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+    }
+  
+.select-selected {
+    background-color: DodgerBlue;
+}
+/*--custom select for quantity--*/
+.custom-select-2 {
+    position: relative;
+    width:120px;
+    margin-top: 10px;
+    margin-left:1050px;
+    font-family: Arial;
+}
+
+.custom-select-2 select {
+    background: cornflowerblue;
+    width: 200px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+    }
+  
+.select-selected {
+    background-color: DodgerBlue;
+}
+/*--product detail texts-*/
+.col-1{
+    position: absolute;
+    margin-top: 50px;
+    margin-left:200px;
+    font-family: Arial;
+}
+.col-2{
+    color:black;
+    position: absolute;
+    margin-top: 200px;
+    margin-left:800px;
+    font-family: Arial;
+    font-size: 30px;
+}
+.col-3{
+    color:rgb(47, 118, 201);
+    position: absolute;
+    margin-top: 100px;
+    margin-left:800px;
+    font-family: Arial;
+    text-align: left;
+
+}
+
+.col-4{
+    color: black;
+    position: absolute;
+    margin-top: 205px;
+    margin-left:1100px;
+    font-family: Arial;
+    text-align: left;
+
+}
+.col-5{
+    color: black;
+    position: absolute;
+    margin-top: 400px;
+    margin-left:800px;
+    font-family: Arial;
+    text-align: left;
+
+}
+/* Horizontal line spacing for product detail page text */ 
+.col-6{
+    color: black;
+    position: absolute;
+    margin-top: 440px;
+    margin-left:800px;
+    font-family: Arial;
+    text-align: left;
+
+}
+.col-7{
+    color: black;
+    position: absolute;
+    margin-top: 640px;
+    margin-left:800px;
+    font-family: Arial;
+    text-align: left;
+
+}
+/* Horizontal line spacing for product detail page text */ 
+hr { 
+    margin: 0px 0 10px 0; 
+    padding: 0px 0px;
+}
