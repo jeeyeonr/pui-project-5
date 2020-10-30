@@ -1,0 +1,61 @@
+<!doctype html>
+<head>
+    <title>BunBun Website</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="store.js" async></script>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+<body>
+<!--logo-->
+    <div class="header-1">
+        <div class="row">
+            <div class= "logo">
+            <img src="logo.png">
+            </div>
+            <div class= "logo2">
+            <img src="LogoMakr_3POgW0.png">
+            </div>
+<!-- Shopping cart -->
+
+<!--main navigation-->
+        <u1 class="main-nav">
+            <li class="active"><a href="#"> Home </a></li>
+            <li><a href="#"> About </a></li>
+            <li><a href="Menu.html"> Products </a></li>
+            <li><a href="#"> Locations </a></li>
+            <li><a href="cart.html">
+                <ion-icon name="basket"></ion-icon>Cart<span>(0)</span>
+                </a>
+            </li>
+            <input type="text" placeholder="Search..">
+            <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        </u1>
+        </div>
+<!--Checkout Progress Bar-->
+        <!--box-slider1-->
+        <div class="cart-items">
+            <div class="cart-row">
+                <div class="cart-item-cart-column">
+                    <img class="cart-item-image" src="images/Cinnamon-Buns-2181483.jpg"
+                    width="350" height="350">
+                    <span class= "cart-item-title">Blackberry</span>
+                </div>
+            </div>
+            <div class="cart-row">
+                <span class="cart-price-cart-column">$3.00</span>
+                <div class="cart-quantity-cart-column">
+                    <input class="cart-quantity-input" type="number" value ="1">
+                    <button class="btn btn-remove"
+                    type="button">REMOVE</button>
+                    <button class="btn btn-confirm"
+                    type="button">CONFIRM</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart=total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$39.97</span>
+        </div>
+    </div>
+</body>
+</html>

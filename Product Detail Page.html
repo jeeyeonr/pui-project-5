@@ -2,6 +2,7 @@
 <head>
     <title>Product Detail - Original BunBun</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 <body>
 <!--logo & navigation-->
@@ -19,20 +20,25 @@
             <li><a href="#"> About </a></li>
             <li><a href="Menu.html"> Products </a></li>
             <li><a href="#"> Locations </a></li>
-            <li><a href="#"> Cart </a></li>
+            <li><a href="cart.html">
+                <ion-icon name="basket"></ion-icon>Cart<span id="cart-num-span">(0)</span>
+                </a>
+            </li>
             <input type="text" placeholder="Search..">
+            <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
         </u1>
+        </div>
         <!--box-slider for image screen-->
             <div class="box7">
             <!--img-box-->
             <div class="slide-img2">
-            <img src="images/1421348929.jpg" width="50%">
+                <img id="product-img" src="images/1421348929.jpg" width="50%">
             </div>
             </div>
         <!--box-slider for detail descriptions-->
             <div class="box8">
-            <a href="#" class="buy-btn2">Add to Cart</a>
-            <a href="#" class="buy-btn3">View my Cart</a>
+                <a id="btn-add-to-cart" href="#" class="buy-btn2">Add to Cart</a>
+                <a href="#" class="buy-btn3">View my Cart</a>
             </div>
             <!--detail-box-->
             <div class="detail-box2">
@@ -42,56 +48,65 @@
                 <h1>Blackberry</h1>
             </div>
             <div class="col-2">
-                    <h6>Flavor</h6>
-                    <h2>Blackberry</h2>
-                    <h6>single price:$3.00</h6>
+                <h6>Flavor</h6>
+                <h2>Blackberry</h2>
+                <h6>single price:$3.00</h6>
             </div>
             <!--box-slider for text detail descriptions-->
             <div class="col-3">
-                    <h3>Product Details</h3>
-                    <p>Taste the fresh wild blueberries with the sweetest dough filling on top.</p>
-                    <p>Californian fresh blueberries will make you keep lick your fingers!</p>
+                <h3>Product Details</h3>
+                <p>Taste the fresh wild blueberries with the sweetest dough filling on top.</p>
+                <p>Californian fresh blueberries will make you keep lick your fingers!</p>
             </div>
             <!--box-slider for ingredients text-->
             <div class="col-4">
-                    <h5>Ingredients</h5>
-                    <hr>
-                    <h6>Pure Vanila Extract</h6>
-                    <hr>
-                    <h6>Organic Flour</h6>
-                    <hr>
-                    <h6>Californian Blackberries</h6>
-                    <hr>
+                <h5>Ingredients</h5>
+                <hr>
+                <h6>Pure Vanila Extract</h6>
+                <hr>
+                <h6>Organic Flour</h6>
+                <hr>
+                <h6>Californian Blackberries</h6>
+                <hr>
             </div>
             <!--box-slider for glazing options-->
             <div class="col-5">
-                    <h3>Glazing Options</h3>
+                <h3>Glazing Options</h3>
             </div>
             <!--box-slider for quantity options-->
             <div class="col-6">
-                    <h3>Quantity</h3>
+                <h3>Quantity</h3>
+            </div>
+            <div class="col-8">
+                <h3 id="price-tag">Total Price</h3>
             </div>
             <!--box-slider for select glazing options-->
             <div class="custom-select" style="width:200px;">
-                <select>
-                    <option value="0">Select Glazing</option>
-                    <option value="1">None</option>
-                    <option value="2">Sugar-Milk</option>
-                    <option value="3">Vanila-Milk</option>
-                    <option value="4">Double Chocolate</option>
-                </select>
+                <section onchange="chooseglazing()" class="glaze">
+                    <select name="glaze" id="glaze">
+                        <option value="0">Select Glazing</option>
+                        <option value="none">None</option>
+                        <option value="sugar-milk">Sugar-Milk</option>
+                        <option value="vanila-milk">Vanila-Milk</option>
+                        <option value="double-chocolate">Double Chocolate</option>
+                    </select>
+                </section>
             </div>
             <!--box-slider for select quantity options-->
             <div class="custom-select-2" style="width:200px;">
-                <select>
-                    <option value="0">Number</option>
-                    <option value="1">1</option>
-                    <option value="2">3</option>
-                    <option value="3">6</option>
-                    <option value="4">12</option>
-                </select>
-            </div>
-        </div> 
+                <section onchange="priceshift()" class ="quantity">
+                    <select name="quantity" id="quantity">
+                        <option value="0">Select Quantity</option>
+                        <option value="1">1</option>
+                        <option value="2">3</option>
+                        <option value="3">6</option>
+                        <option value="4">12</option>
+                    </select>
+                </section>
+            </div>    
+        </div>
+        <script src="detail.js" async></script>
     </body>
 </html>
+    
     
